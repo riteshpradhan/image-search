@@ -1,0 +1,11 @@
+Image Search Engine
+
+On the most basic level, there are four steps to building an image search engine:
+
+1.  Define your descriptor: What type of descriptor are you going to use? Are you describing color? Texture? Shape?
+
+2. Index your dataset: Apply your descriptor to each image in your dataset, extracting a set of features.
+
+3.  Define your similarity metric: How are you going to define how “similar” two images are? You’ll likely be using some sort of distance metric. Common choices include Euclidean, Cityblock (Manhattan), Cosine, and chi-squared to name a few.
+
+4.  Searching: To perform a search, apply your descriptor to your query image, and then ask your distance metric to rank how similar your images are in your index to your query images. Sort your results via similarity and then examine them.
